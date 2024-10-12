@@ -8,18 +8,17 @@ const AnalogClockWithOuterSchedule = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Ubah Bagian Sini Aja Guys >_<
+ 
   const activities = [
-    { name: "Tidur", start: 1, end: 4 },
-    { name: "Bangun", start: 4, end: 5 },
-    { name: "Clean up", start: 5, end: 7 },
-    { name: "Olahraga", start: 7, end: 8 },
-    { name: "Nonton", start: 8, end: 11 },
-    { name: "Ishoma ", start: 11, end: 13 },
-    { name: "Ngoding", start: 13, end: 15 },
+    { name: "Coding", start: 1, end: 4 },
+    { name: "Tidur", start: 4, end: 7 },
+    { name: "Pasar", start: 7, end: 8 },
+    { name: "Tidur", start: 8, end: 11 },
+    { name: "Masak", start: 11, end: 13 },
+    { name: "Drive", start: 13, end: 15 },
     { name: "Free time :)", start: 15, end: 18 },
-    { name: "Belajar", start: 18, end: 22 },
-    { name: "Research", start: 22, end: 24 },
+    { name: "Coding", start: 18, end: 22 },
+    { name: "Kdrama", start: 22, end: 24 },
   ];
 
   const secondsDegrees = (time.getSeconds() / 60) * 360;
@@ -28,7 +27,7 @@ const AnalogClockWithOuterSchedule = () => {
 
   return (
     <div className="outer-container ">
-      <h2 style={{ margin: 10 }}>JADWAL MENGANGGUR YOUR_NAME !</h2>
+      <h2 style={{ margin: 10 }}>JADUAL HARIAN IZZ !</h2>
       <p style={{ margin: 0 }}>
         <i>Inspired by Bae Seok Ryu - Love Next Door</i>
       </p>
@@ -142,6 +141,7 @@ const AnalogClockWithOuterSchedule = () => {
           justify-content: center; 
           height: 100vh; 
           font-family: Arial, sans-serif;
+           background-color: #db7093;
         }
         .clock-container {
           margin-top:50px;
@@ -190,7 +190,7 @@ const AnalogClockWithOuterSchedule = () => {
           transform: translate(-50%, -50%);
           width: 60px;
           height: 60px;
-          background-color: orange;
+          background-color: maroon;
           border-radius: 50%;
           display: flex;
           justify-content: center;
